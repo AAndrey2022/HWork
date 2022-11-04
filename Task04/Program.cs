@@ -6,13 +6,17 @@
 // 2. Выдаёт максимальное из этих чисел.
 
 Console.Write("Введите целое число: ");
-int num1 = convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
+//  Convert.ToInt32(Console.ReadLine())
 Console.Write("Введите целое число: ");
-int num2 = convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите целое число: ");
-int num3 = convert.ToInt32(Console.ReadLine());
-int num_max = 1;
-if (num1>num_max) num_max = num1;
-if (num2>num_max) num_max = num2;
-if (num3>num_max) num_max = num3;
-{Console.Write($"Максимальное число: {num_max}");}
+int num3 = Convert.ToInt32(Console.ReadLine());
+int num_max = 0;
+if (num1 > num_max)
+{ num_max = num1; }
+if (num2 > num_max)
+{ num_max = num2; }
+if (num3 > num_max)
+{num_max = num3;}
+Console.Write($"Максимальное число: {num_max}");
