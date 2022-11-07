@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая:
+// 1. Принимает на вход трёхзначное число 
+// 2. На выходе показывает вторую цифру этого числа. 
+// Выполнить с помощью числовых операций (целочисленное деление, остаток от деления).
+
+// Например: 456 -> 5
+//           782 -> 8
+//           918 -> 1
+Console.WriteLine("Введите трехзначное число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+if (a <= 100)
+{
+    Console.WriteLine("Третьей цифры НЕТ!!!");
+}
+else
+{
+        Console.WriteLine($"Второе число: {a % 100}. ");
+}
