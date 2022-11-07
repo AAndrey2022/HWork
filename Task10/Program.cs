@@ -15,5 +15,5 @@ if (a <= 100)
 }
 else
 {
-        Console.WriteLine($"Второе число: {a % 100}. ");
+    Console.WriteLine($"Второе число: {a % 100 / 10}. ");
 }
